@@ -1,0 +1,16 @@
+# Ignored files and directories #
+#################################
+*.log
+.env
+*.bak
+vendor/
+crosscompile*.sh
+gintemp
+example/example
+keys
+tmp
+.vscode
+coverage.txt
+pri*key*.pem
+pub*key*.pem
+public/
