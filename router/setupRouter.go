@@ -248,6 +248,8 @@ func SetupRouter(configure *gconfig.Configuration) (*gin.Engine, error) {
 			// Media
 			rMedia := v1.Group("media")
 			rMedia.GET("", controller.GetMedia)    // Non-protected
+			rMedia.GET("/create", controller.CreateFolder)   // Non-protected
+			rMedia.GET("/rename", controller.RenameFolder)   // Non-protected
 			// Post
 			rPosts := v1.Group("posts")
 			rPosts.GET("", controller.GetPosts)    // Non-protected
